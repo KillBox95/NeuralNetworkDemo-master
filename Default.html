@@ -12,48 +12,48 @@
     <link href="css/style.css" rel="stylesheet" />
 </head>
 <body>
-    <h1>Neural network demo - simple OCR</h1>
+    <h1>Демонстрация нейронной сети - простое распознавание текста</h1>
     <p>
-        <b>Demo instructions:</b>
+        <b>Демонстрационные инструкции:</b>
         <ul>
-            <li>Draw a character (A, B or C) in the left square.</li>
-            <li>Click 'Read'. A downsampled version of the drawing appears in the middle square.</li>
-            <li>The network now tries to guess what you have drawn and displays the character in the right right square.</li>
+            <li>Нарисуйте символ (A, B или C) в левом квадрате.</li>
+            <li>Нажмите "Прочитать". Уменьшенная версия рисунка появится в среднем квадрате.</li>
+            <li>Теперь сеть пытается угадать, что вы нарисовали, и отображает символ в правом правом квадрате.</li>
         </ul>
-        <b>Training instructions:</b><br/>
-        The preloaded network only knows about the characters A, B and C. You can improve the recognition of these characters, or add new characters to your liking.
+        <b>Инструкции по обучению:</b><br/>
+        Предварительно загруженная сеть знает только о символах A, B и C. Вы можете улучшить распознавание этих символов или добавить новых букв по своему вкусу.
         <ul>
-            <li>Type the character to train in the input field.</li>
-            <li>Draw the character in the left square.</li>
-            <li>Click 'Train character'.</li>
-            <li>Repeat this with different drawings of the same character to train the network.</li>
+            <li>Введите символ для тренировки в поле ввода.</li>
+            <li>Нарисуйте символ в левом квадрате.</li>
+            <li>Нажмите "Обучить систему".</li>
+            <li>Повторите это с разными рисунками одного и того же персонажа, чтобы обучить сеть.</li>
         </ul>
     </p>
     <div>
         <div style="float: left;">
-            <span>Your drawing (150 x 150):</span><br />
+            <span>Ваш рисунок (150 x 150):</span><br />
             <canvas id="canvas" width="150" height="150"></canvas>
         </div>
         <div style="float: left; margin-left: 15px;">
-            <span>Outline grid (15x15):</span><br />
+            <span>Контурная сетка (15x15):</span><br />
             <canvas id="outlines" width="150" height="150"></canvas>
         </div>
         <div id="output">
             <span>
-                Output:<br />
+                Вывод:<br />
             </span>
             <span id="bestGuess">
             </span>
         </div>
     </div>
     <div style="clear:both;">
-        <button id="clear">Clear</button>
-        <button id="read">Read</button>
+        <button id="clear">Очистить</button>
+        <button id="read">Прочитать</button>
     </div>
     <hr />
     <div>
         <input type="text" value="A" maxlength="1" id="txtCharacter" />
-        <button id="trainCharacter">Train character</button>
+        <button id="trainCharacter">Обучить систему</button>
         
         <div id="outputValues"></div></div>
 </body>
