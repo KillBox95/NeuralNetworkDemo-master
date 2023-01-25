@@ -27,3 +27,13 @@
     height: 150px;
     border: 1px solid #000;
 }
+.conteiner {
+    background-color: rgb(192, 150, 150);
+    display: flex;
+    align-items: center;
+    width: 60%;
+    height: auto; 
+}
+body{
+    background-color: beige;
+}

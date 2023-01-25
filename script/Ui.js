@@ -7,7 +7,7 @@ $(document).ready(function () {
 
     //create outline context
     outlineContext = document.getElementById("outlines").getContext("2d");
-    outlineContext.fillStyle = "red";
+    outlineContext.fillStyle = "blue";
     outlineContext.strokeStyle = "gray";
 
     $('#canvas').mousedown(function (e) {
@@ -68,7 +68,7 @@ $(document).ready(function () {
     function redraw() {
         context.clearRect(0, 0, context.canvas.width, context.canvas.height); // Clears the canvas
 
-        context.strokeStyle = "green";
+        context.strokeStyle = "red";
         context.lineJoin = "round";
         context.lineWidth = 5;
 
